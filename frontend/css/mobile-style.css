@@ -1,0 +1,102 @@
+@media only screen and (max-width: 768px) {
+    .navbar-nav {
+        font-size: 4vmin;
+    }
+
+    header .navbar-collapse a {
+        font-size: 3vmin;
+    }
+
+    .section-1 .row .col-md-6 .panel {
+        position: initial;
+        width: initial;
+        height: initial;
+    }
+
+    .section-1 .row .col-md-6 .pray img {
+        width: 20s;
+        border-radius: 0.2em;
+    }
+
+    .section-2 .cover {
+        background-position: -25vmin;
+    }
+
+    .section-3 .col-md-12>h1 {
+        font-size: 10vmin;
+        padding: 0 0 1em;
+    }
+
+    .section-4 .team {
+        padding: 20px;
+    }
+
+    .tela-inteira {
+        width: 250px;
+    }
+
+
+    footer {
+        padding: 3vmin;
+    }
+
+    footer .grid {
+        padding-left: 10px;
+    }
+
+    footer .flexbox {
+        padding-left: 10px;
+    }
+
+    footer .row {
+        margin: 0;
+
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .section-1 .row .col-md-6 .panel {
+        position: initial;
+        width: initial;
+        height: initial;
+    }
+
+    .section-1 .row .col-md-6 .pray img {
+        width: 0%;
+        height: 0%;
+    }
+
+    .section-2 .cover {
+        background-position: -25vmin;
+    }
+
+    .section-4 .container>h1 {
+        font-size: 10vmin;
+    }
+
+    footer {
+        padding: 0vmin 3vmin;
+    }
+
+    footer .span_4 .footer-grid .grid .text-center {
+        padding-left: 20vmin;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    footer .container {
+        padding: 20px;
+    }
+
+}
+
+@media only screen and (max-width: 320px) {
+    header .navbar-brand img {
+        width: 150px;
+    }
+
+    .section-4 .team {
+        padding: 20px;
+    }
+
+}
