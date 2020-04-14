@@ -14,8 +14,8 @@
     }
 
     .section-1 .row .col-md-6 .pray img {
-        width: 20s;
-        border-radius: 0.2em;
+        height: 0;
+        width: 0;
     }
 
     .section-2 .cover {

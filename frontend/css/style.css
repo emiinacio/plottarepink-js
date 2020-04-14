@@ -9,10 +9,8 @@ body {
     padding: 0;
 }
 
-
-
 header .navbar-brand img {
-    opacity: 70%;
+    opacity: 95%;
     width: 200px;
 }
 
@@ -49,32 +47,9 @@ header {
     height: 750px;
 }
 
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background: white;
-    min-width: 160px;
-    box-shadow: 0px 2px 15px 0px rgba(0, 0, 0, 0, 0.2);
-    z-index: 1;
-}
-
-.dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-}
-
-.dropdown-content a:hover {
-    background: #ddd;
-}
-
-.dropdown:hover .dropdown-content {
-    display: block;
-}
 
 header li a:hover {
-    color: #2e2e2e;
+    color: rgb(226, 150, 163);
 }
 
 header .nav-item {
@@ -112,6 +87,18 @@ header .col-md-12 button {
     font-weight: bold;
 }
 
+header .col-md-12 button a {
+    color: black;
+    font-family: var(--Rubik);
+    font-size: 0.9em;
+    font-size: 2vmin;
+}
+
+header .col-md-12 button a:hover {
+    text-decoration: none;
+    color: white;
+}
+
 header .col-md-12 button:hover {
     color: #fff;
     background-color: rgb(236, 56, 86);
@@ -121,12 +108,12 @@ header .col-md-12 button:hover {
 /*    Section 1     */
 
 .section-1 {
-    width: 100vw;
+
     padding: 20vmin 0;
 }
 
 .section-1 .row .col-md-6 .pray img {
-    opacity: 70%;
+    opacity: 90%;
     width: 80s;
     border-radius: 0.2em;
 }
@@ -160,7 +147,7 @@ header .col-md-12 button:hover {
 /*    Section 2     */
 
 .cover {
-    width: 100vw;
+
     height: 55vmin;
     background-image: url("../assets/pexels-photo-452738.jpeg");
     background-position: -25rem -20rem;
@@ -172,12 +159,11 @@ header .col-md-12 button:hover {
 .cover .content {
     background: rgba(0, 0, 0, 0.7);
     height: 100%;
-    width: 100vw;
     padding: 19vmin;
 }
 
 .cover .content>h1 {
-    font-family: var(--Patua);
+    font-family: var(--Rubik);
     font-size: 6vmin;
     color: whitesmoke;
 }
@@ -266,7 +252,7 @@ header .col-md-12 button:hover {
 }
 
 .section-3 .col-md-12>h1 {
-    padding: 2em 0 0 0.5em;
+    padding: 1em 0 1em 0;
     color: whitesmoke;
     font-size: 6vmin;
 }
@@ -290,8 +276,9 @@ header .col-md-12 button:hover {
 }
 
 .section-3 .form-row textarea {
-    height: 70px;
+    height: 38px;
 }
+
 
 /*    Section 4     */
 
@@ -357,7 +344,7 @@ header .col-md-12 button:hover {
 /* FOOTER*/
 
 footer {
-    background: rgba(0, 0, 0, 0.881);
+    background: black;
     overflow: hidden;
     padding: 5vmin 2vmin;
 }
@@ -366,8 +353,12 @@ footer h4 {
     text-align: left;
 }
 
-footer li {
+footer a {
     color: whitesmoke;
+}
+
+footer a:hover {
+    color: rgb(87, 87, 87);
 }
 
 footer p {
@@ -381,11 +372,11 @@ footer .container {
 }
 
 footer .flexbox {
-    padding-left: 50px;
+    padding: 0 0px;
 }
 
 footer .column i {
-    color: #dd2476;
+    color: whitesmoke;
 }
 
 footer .column i+i {
@@ -393,5 +384,5 @@ footer .column i+i {
 }
 
 footer .grid {
-    padding-left: 70px;
+    padding: 0 25px;
 }

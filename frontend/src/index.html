@@ -7,8 +7,8 @@
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link rel="stylesheet" type="text/css" href="/frontend/css/style.css">
-  <link rel="stylesheet" type="text/css" href="/frontend/css/mobile-style.css">
+  <link rel="stylesheet" type="text/css" href="../css/style.css">
+  <link rel="stylesheet" type="text/css" href="../css/mobile-style.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
@@ -23,7 +23,7 @@
   <header>
     <div class="container-fluid p-0">
       <nav class="navbar navbar-expand-lg">
-        <a class="navbar-brand" href="#"><img src="../assets/logo.png" alt=""></a>
+        <a class="navbar-brand" href="index.html"><img src="../assets/logo3.png" alt=""></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
           aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -34,30 +34,13 @@
           <div class="ml-auto">
             <ul class="navbar-nav ">
               <li class="nav-item active">
-                <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
-              </li>
-              <li class="nav-item dropdow">
-                <div class="dropdown">
-                  <a class="nav-link" href="#">Serviços</a>
-                  <div class="dropdown-content">
-                    <a href="">Cartão de visita</a>
-                    <a href="">Panfleto</a>
-                    <a href="">Banner</a>
-                    <a href="">Faixa</a>
-                    <a href="">Toten</a>
-                    <a href="">Placas</a>
-                    <a href="">Impressão Digital</a>
-                  </div>
-                </div>
+                <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Clientes</a>
+                <a class="nav-link" href="gallery.html">Portfólio</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Trabalhos</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Contatos</a>
+                <a class="nav-link" href="contacts.html">Solicitar Orçamento</a>
               </li>
             </ul>
           </div>
@@ -71,7 +54,7 @@
           <h1>Plottare</h1>
           <h1>Comunicação Visual</h1>
           <h3>Nós energizamos as marcas e crescemos juntos!</h3>
-          <button class="btn btn-light px-5 py-2">Venha nos conhecer</button>
+          <button class="btn btn-light px-5 py-2"><a href="contacts.html">Solicitar Orçamento</a></button>
         </div>
       </div>
     </div>
@@ -128,7 +111,7 @@
       </div>
 
       <div class="content-fluid text-center">
-        <div class="numbers d-flex flex-md-row justify-content-center">
+        <div class="numbers d-flex flex-md-row justify-content-center flex-wrap">
           <div class="rect">
             <h1>+150</h1>
             <p>Clientes Atendidos</p>
@@ -214,44 +197,64 @@
       <div class="row mb-5 justify-content-center">
         <div class="col-sm-12 col-md-10 col-lg-8">
 
-          <form>
+          <form method="GET" action="processa.php">
             <div class="form-row">
               <div class="form-group col-sm-6 ">
-                <label for="inputNome">Nome</label>
-                <input type="text" class="form-control" id="inputNome" placeholder="Nome">
+                <label for="inputNome">Nome Completo *</label>
+                <input type="text" name="nome" class="form-control" id="inputNome">
               </div>
 
               <div class="form-group col-sm-6">
-                <label for="inputSobrenome">Sobrenome</label>
-                <input type="text" class="form-control" id="inputSobrenome" placeholder="Sobrenome">
+                <label for="inputEmail">E-mail *</label>
+                <input type="email" name="email" class="form-control" id="inputEmail">
               </div>
             </div>
 
             <div class="form-row">
               <div class="form-group col-md-12">
                 <label for="inputEnd">Endereço</label>
-                <input type="text" class="form-control" id="inputEnd" placeholder="Endereço completo">
+                <input type="text" name="endereco" class="form-control" id="inputEnd">
               </div>
             </div>
 
             <div class="form-row">
               <div class="form-group col-sm-6">
-                <label for="inputCidade">Cidade</label>
-                <input type="text" class="form-control" id="inputCidade" placeholder="Cidade">
+                <label for="inputCidade">Cidade *</label>
+                <input type="text" name="cidade" class="form-control" id="inputCidade">
               </div>
 
               <div class="form-group col-sm-6">
-                <label for="inputTel">Telefone</label>
-                <input type="tel" class="form-control" placeholder="Telefone" id="inputTel">
+                <label for="inputTel">Telefone *</label>
+                <input type="tel" name="telefone" class="form-control" placeholder="Telefone" id="inputTel">
+              </div>
+
+            </div>
+
+            <div class="form-row">
+              <div class="form-group col-sm-6">
+                <label for="inputTel">Tipo de serviços *</label>
+                <select name="tipoDeServico" class="form-control" id="inputServicos">
+                  <option>Cartão de Visita</option>
+                  <option>Banner</option>
+                  <option>Impressão Digital</option>
+                  <option>Panfleto</option>
+                  <option>Faixas</option>
+                  <option>Adesivo de Recorte</option>
+                  <option>Plotagem de Veiculos</option>
+                  <option>Fachadas de ACM</option>
+                  <option>Toldo</option>
+                  <option>Toten</option>
+                  <option>Placas</option>
+                  <option>Perfurado</option>
+                  <option>Decoração de evento</option>
+                  <option>Serralheria</option>
+
                 </select>
               </div>
 
-            </div>
-
-            <div class="form-row">
-              <div class="form-group col-md-12 col">
-                <label for="inputEnd">Descrição do projeto</label>
-                <textarea class="form-control" name="descricão" id="textareaDescr" cols="30" rows="10"></textarea>
+              <div class="form-group col-sm-6 ">
+                <label for="inputEnd">Descrição do projeto *</label>
+                <textarea class="form-control" name="descricao" id="textareaDescr" cols="30" rows="10"></textarea>
               </div>
             </div>
 
@@ -357,18 +360,16 @@
           <div class=" span_4 footer-grid grid">
             <h4 class="text-light">Menu</h4>
             <ul class="list-unstyled">
-              <li>Home</li>
-              <li>Serviços</li>
-              <li>Clientes</li>
-              <li>Trabalhos</li>
-              <li>Contato</li>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="gallery.html">Portfólio</a></li>
+              <li><a href="contacts.html">Solicitar Orçamento</a></li>
             </ul>
           </div>
 
           <div class="span_4 footer-grid grid">
             <h4 class="text-light">Siga-nos</h4>
             <div class="column text-light">
-              <i class="fab fa-facebook"></i>
+              <a href="https://www.facebook.com/plottare/"><i class="fab fa-facebook"></i></a>
               <i class="fab fa-instagram"></i>
               <i class="fab fa-twitter"></i>
               <i class="fab fa-youtube"></i>
@@ -377,7 +378,9 @@
         </div>
       </div>
     </div>
+
     </div>
+    <p class="text-secondary text-center text-muted"></p>
   </footer>
 
   <!-- Optional JavaScript -->
